@@ -1,0 +1,468 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/" --output-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/" --file-set=SIM_VHDL --report-file="sopcinfo:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.sopcinfo" --report-file="html:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.html" --report-file="sip:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/DigitalLock.sip" --report-file="csv:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.csv" --report-file="spd:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.spd" --report-file="cmp:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.cmp" --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys"
+Progress: Loading Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding IN_RAM [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module IN_RAM
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding HEX [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDR
+Progress: Adding KEY [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SW
+Progress: Adding TIMER [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module TIMER
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DigitalLock.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DigitalLock.sysid: Time stamp will be automatically updated when this component is generated.
+Info: DigitalLock: Generating DigitalLock "DigitalLock" for SIM_VHDL
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 35 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 23 modules, 71 connections
+Info: merlin_domain_transform: After transform: 46 modules, 193 connections
+Info: merlin_router_transform: After transform: 58 modules, 229 connections
+Info: reset_adaptation_transform: After transform: 59 modules, 231 connections
+Info: merlin_network_to_switch_transform: After transform: 82 modules, 279 connections
+Info: merlin_mm_transform: After transform: 82 modules, 279 connections
+Info: merlin_interrupt_mapper_transform: After transform: 83 modules, 282 connections
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: CPU: Starting RTL generation for module 'DigitalLock_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DigitalLock_CPU --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0001_CPU_gen//DigitalLock_CPU_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0001_CPU_gen/    --bogus  ]
+Info: CPU: # 2026.01.20 17:21:47 (*) Starting Nios II generation
+Info: CPU: # 2026.01.20 17:21:47 (*)   Checking for plaintext license.
+Info: CPU: # 2026.01.20 17:21:51 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2026.01.20 17:21:51 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2026.01.20 17:21:51 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2026.01.20 17:21:51 (*)   Plaintext license not found.
+Info: CPU: # 2026.01.20 17:21:51 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2026.01.20 17:21:51 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2026.01.20 17:21:51 (*)   Creating all objects for CPU
+Info: CPU: # 2026.01.20 17:21:52 (*)   Creating 'C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0001_CPU_gen//DigitalLock_CPU_nios2_waves.do'
+Info: CPU: # 2026.01.20 17:21:52 (*)   Generating RTL from CPU objects
+Info: CPU: # 2026.01.20 17:21:52 (*)   Creating plain-text RTL
+Info: CPU: # 2026.01.20 17:21:56 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'DigitalLock_CPU'
+Info: CPU: "DigitalLock" instantiated altera_nios2_qsys "CPU"
+Info: IN_RAM: Starting RTL generation for module 'DigitalLock_IN_RAM'
+Info: IN_RAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DigitalLock_IN_RAM --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0002_IN_RAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0002_IN_RAM_gen//DigitalLock_IN_RAM_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0002_IN_RAM_gen/  ]
+Info: IN_RAM: Done RTL generation for module 'DigitalLock_IN_RAM'
+Info: IN_RAM: "DigitalLock" instantiated altera_avalon_onchip_memory2 "IN_RAM"
+Info: JTAG_UART: Starting RTL generation for module 'DigitalLock_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DigitalLock_JTAG_UART --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0003_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0003_JTAG_UART_gen//DigitalLock_JTAG_UART_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0003_JTAG_UART_gen/  ]
+Info: JTAG_UART: Done RTL generation for module 'DigitalLock_JTAG_UART'
+Info: JTAG_UART: "DigitalLock" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: HEX: Starting RTL generation for module 'DigitalLock_HEX'
+Info: HEX:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_HEX --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0004_HEX_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0004_HEX_gen//DigitalLock_HEX_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0004_HEX_gen/  ]
+Info: HEX: Done RTL generation for module 'DigitalLock_HEX'
+Info: HEX: "DigitalLock" instantiated altera_avalon_pio "HEX"
+Info: LEDG: Starting RTL generation for module 'DigitalLock_LEDG'
+Info: LEDG:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_LEDG --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0005_LEDG_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0005_LEDG_gen//DigitalLock_LEDG_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0005_LEDG_gen/  ]
+Info: LEDG: Done RTL generation for module 'DigitalLock_LEDG'
+Info: LEDG: "DigitalLock" instantiated altera_avalon_pio "LEDG"
+Info: LEDR: Starting RTL generation for module 'DigitalLock_LEDR'
+Info: LEDR:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_LEDR --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0006_LEDR_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0006_LEDR_gen//DigitalLock_LEDR_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0006_LEDR_gen/  ]
+Info: LEDR: Done RTL generation for module 'DigitalLock_LEDR'
+Info: LEDR: "DigitalLock" instantiated altera_avalon_pio "LEDR"
+Info: KEY: Starting RTL generation for module 'DigitalLock_KEY'
+Info: KEY:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_KEY --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0007_KEY_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0007_KEY_gen//DigitalLock_KEY_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0007_KEY_gen/  ]
+Info: KEY: Done RTL generation for module 'DigitalLock_KEY'
+Info: KEY: "DigitalLock" instantiated altera_avalon_pio "KEY"
+Info: SW: Starting RTL generation for module 'DigitalLock_SW'
+Info: SW:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_SW --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0008_SW_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0008_SW_gen//DigitalLock_SW_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0008_SW_gen/  ]
+Info: SW: Done RTL generation for module 'DigitalLock_SW'
+Info: SW: "DigitalLock" instantiated altera_avalon_pio "SW"
+Info: TIMER: Starting RTL generation for module 'DigitalLock_TIMER'
+Info: TIMER:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=DigitalLock_TIMER --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0009_TIMER_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0009_TIMER_gen//DigitalLock_TIMER_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0009_TIMER_gen/  ]
+Info: TIMER: Done RTL generation for module 'DigitalLock_TIMER'
+Info: TIMER: "DigitalLock" instantiated altera_avalon_timer "TIMER"
+Info: sysid: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: sysid: Generated simulation model DigitalLock_sysid.vho
+Info: sysid: "DigitalLock" instantiated altera_avalon_sysid_qsys "sysid"
+Info: CPU_instruction_master_translator: "DigitalLock" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "DigitalLock" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "DigitalLock" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "DigitalLock" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model DigitalLock_CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "DigitalLock" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: addr_router: "DigitalLock" instantiated altera_merlin_router "addr_router"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: addr_router_001: "DigitalLock" instantiated altera_merlin_router "addr_router_001"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: id_router: "DigitalLock" instantiated altera_merlin_router "id_router"
+Warning: Parallel compilation is not licensed and has been disabled
+Info: id_router_002: "DigitalLock" instantiated altera_merlin_router "id_router_002"
+Info: rst_controller: "DigitalLock" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: cmd_xbar_demux: Generated simulation model DigitalLock_cmd_xbar_demux.vho
+Info: cmd_xbar_demux: "DigitalLock" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: cmd_xbar_demux_001: Generated simulation model DigitalLock_cmd_xbar_demux_001.vho
+Info: cmd_xbar_demux_001: "DigitalLock" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: cmd_xbar_mux: Generated simulation model DigitalLock_cmd_xbar_mux.vho
+Info: cmd_xbar_mux: "DigitalLock" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux_002: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: rsp_xbar_demux_002: Generated simulation model DigitalLock_rsp_xbar_demux_002.vho
+Info: rsp_xbar_demux_002: "DigitalLock" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: rsp_xbar_mux: Generated simulation model DigitalLock_rsp_xbar_mux.vho
+Info: rsp_xbar_mux: "DigitalLock" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: rsp_xbar_mux_001: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: rsp_xbar_mux_001: Generated simulation model DigitalLock_rsp_xbar_mux_001.vho
+Info: rsp_xbar_mux_001: "DigitalLock" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: irq_mapper: Generating VHDL simulation model
+Warning: Parallel compilation is not licensed and has been disabled
+Info: irq_mapper: Generated simulation model DigitalLock_irq_mapper.vho
+Info: irq_mapper: "DigitalLock" instantiated altera_irq_mapper "irq_mapper"
+Info: DigitalLock: Done DigitalLock" with 28 modules, 166 files, 6940069 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.spd" --output-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/"
+Info: Doing: ip-make-simscript --spd=C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.spd --output-directory=C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	22 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERAPRO simulator in C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/" --output-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/" --report-file="bsf:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.bsf" --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys"
+Progress: Loading Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding IN_RAM [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module IN_RAM
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding HEX [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDR
+Progress: Adding KEY [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SW
+Progress: Adding TIMER [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module TIMER
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DigitalLock.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DigitalLock.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/" --output-directory="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/synthesis/" --file-set=QUARTUS_SYNTH --report-file="sopcinfo:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.sopcinfo" --report-file="html:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.html" --report-file="qip:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/synthesis/DigitalLock.qip" --report-file="cmp:C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.cmp" --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C20F484C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file="C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys" --language=VHDL
+Progress: Loading Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock.qsys
+Progress: Reading input file
+Progress: Adding CLK_50 [clock_source 13.0]
+Progress: Parameterizing module CLK_50
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding IN_RAM [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module IN_RAM
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding HEX [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module HEX
+Progress: Adding LEDG [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDG
+Progress: Adding LEDR [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module LEDR
+Progress: Adding KEY [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module KEY
+Progress: Adding SW [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module SW
+Progress: Adding TIMER [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module TIMER
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DigitalLock.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: DigitalLock.sysid: Time stamp will be automatically updated when this component is generated.
+Info: DigitalLock: Generating DigitalLock "DigitalLock" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 35 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 23 modules, 71 connections
+Info: merlin_domain_transform: After transform: 46 modules, 193 connections
+Info: merlin_router_transform: After transform: 58 modules, 229 connections
+Info: reset_adaptation_transform: After transform: 59 modules, 231 connections
+Info: merlin_network_to_switch_transform: After transform: 82 modules, 279 connections
+Info: merlin_mm_transform: After transform: 82 modules, 279 connections
+Info: merlin_interrupt_mapper_transform: After transform: 83 modules, 282 connections
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: DigitalLock: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: CPU: Starting RTL generation for module 'DigitalLock_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=DigitalLock_CPU --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0055_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0055_CPU_gen//DigitalLock_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2026.01.20 17:22:36 (*) Starting Nios II generation
+Info: CPU: # 2026.01.20 17:22:36 (*)   Checking for plaintext license.
+Info: CPU: # 2026.01.20 17:22:37 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2026.01.20 17:22:37 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2026.01.20 17:22:37 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2026.01.20 17:22:37 (*)   Plaintext license not found.
+Info: CPU: # 2026.01.20 17:22:37 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2026.01.20 17:22:37 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2026.01.20 17:22:37 (*)   Creating all objects for CPU
+Info: CPU: # 2026.01.20 17:22:38 (*)   Generating RTL from CPU objects
+Info: CPU: # 2026.01.20 17:22:38 (*)   Creating plain-text RTL
+Info: CPU: # 2026.01.20 17:22:42 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'DigitalLock_CPU'
+Info: CPU: "DigitalLock" instantiated altera_nios2_qsys "CPU"
+Info: IN_RAM: Starting RTL generation for module 'DigitalLock_IN_RAM'
+Info: IN_RAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DigitalLock_IN_RAM --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0056_IN_RAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0056_IN_RAM_gen//DigitalLock_IN_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: IN_RAM: Done RTL generation for module 'DigitalLock_IN_RAM'
+Info: IN_RAM: "DigitalLock" instantiated altera_avalon_onchip_memory2 "IN_RAM"
+Info: JTAG_UART: Starting RTL generation for module 'DigitalLock_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DigitalLock_JTAG_UART --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0057_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0057_JTAG_UART_gen//DigitalLock_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'DigitalLock_JTAG_UART'
+Info: JTAG_UART: "DigitalLock" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: HEX: Starting RTL generation for module 'DigitalLock_HEX'
+Info: HEX:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_HEX --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0058_HEX_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0058_HEX_gen//DigitalLock_HEX_component_configuration.pl  --do_build_sim=0  ]
+Info: HEX: Done RTL generation for module 'DigitalLock_HEX'
+Info: HEX: "DigitalLock" instantiated altera_avalon_pio "HEX"
+Info: LEDG: Starting RTL generation for module 'DigitalLock_LEDG'
+Info: LEDG:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_LEDG --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0059_LEDG_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0059_LEDG_gen//DigitalLock_LEDG_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDG: Done RTL generation for module 'DigitalLock_LEDG'
+Info: LEDG: "DigitalLock" instantiated altera_avalon_pio "LEDG"
+Info: LEDR: Starting RTL generation for module 'DigitalLock_LEDR'
+Info: LEDR:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_LEDR --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0060_LEDR_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0060_LEDR_gen//DigitalLock_LEDR_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDR: Done RTL generation for module 'DigitalLock_LEDR'
+Info: LEDR: "DigitalLock" instantiated altera_avalon_pio "LEDR"
+Info: KEY: Starting RTL generation for module 'DigitalLock_KEY'
+Info: KEY:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_KEY --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0061_KEY_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0061_KEY_gen//DigitalLock_KEY_component_configuration.pl  --do_build_sim=0  ]
+Info: KEY: Done RTL generation for module 'DigitalLock_KEY'
+Info: KEY: "DigitalLock" instantiated altera_avalon_pio "KEY"
+Info: SW: Starting RTL generation for module 'DigitalLock_SW'
+Info: SW:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DigitalLock_SW --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0062_SW_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0062_SW_gen//DigitalLock_SW_component_configuration.pl  --do_build_sim=0  ]
+Info: SW: Done RTL generation for module 'DigitalLock_SW'
+Info: SW: "DigitalLock" instantiated altera_avalon_pio "SW"
+Info: TIMER: Starting RTL generation for module 'DigitalLock_TIMER'
+Info: TIMER:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=DigitalLock_TIMER --dir=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0063_TIMER_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/UTILIS~1/AppData/Local/Temp/alt0473_6490758642343165991.dir/0063_TIMER_gen//DigitalLock_TIMER_component_configuration.pl  --do_build_sim=0  ]
+Info: TIMER: Done RTL generation for module 'DigitalLock_TIMER'
+Info: TIMER: "DigitalLock" instantiated altera_avalon_timer "TIMER"
+Info: sysid: "DigitalLock" instantiated altera_avalon_sysid_qsys "sysid"
+Info: CPU_instruction_master_translator: "DigitalLock" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "DigitalLock" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "DigitalLock" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "DigitalLock" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "DigitalLock" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "DigitalLock" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "DigitalLock" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "DigitalLock" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "DigitalLock" instantiated altera_merlin_router "id_router_002"
+Info: rst_controller: "DigitalLock" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "DigitalLock" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "DigitalLock" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "DigitalLock" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux_002: "DigitalLock" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "DigitalLock" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "DigitalLock" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Digital Lock-Password System (Mini Security System) using Nios II + FPGA (SoC)/DigitalLock/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "DigitalLock" instantiated altera_irq_mapper "irq_mapper"
+Info: DigitalLock: Done DigitalLock" with 28 modules, 117 files, 2335828 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
