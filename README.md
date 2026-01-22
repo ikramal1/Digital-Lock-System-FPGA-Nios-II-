@@ -252,7 +252,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 👥 Authors
 
-- **ALLAM Ikram** - *Initial work* - [YourGitHub](https://github.com/ikramal1)
+- **ALLAM Ikram** - *Initial work* - [github.com/ikramal1](https://github.com/ikramal1)
 
 
 
