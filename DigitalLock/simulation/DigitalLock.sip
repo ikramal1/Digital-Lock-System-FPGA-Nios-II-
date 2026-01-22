@@ -14,6 +14,8 @@ set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::q
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "digitallock_key_s1_translator.vhd"]
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "digitallock_timer_s1_translator.vhd"]
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "digitallock_sysid_control_slave_translator.vhd"]
+set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "digitallock_rst_controller.vhd"]
+set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "digitallock_rst_controller_001.vhd"]
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "submodules/DigitalLock_irq_mapper.vho"]
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "submodules/DigitalLock_rsp_xbar_mux_001.vho"]
 set_global_assignment -library "lib_DigitalLock" -name MISC_FILE [file join $::quartus(sip_path) "submodules/DigitalLock_rsp_xbar_mux.vho"]

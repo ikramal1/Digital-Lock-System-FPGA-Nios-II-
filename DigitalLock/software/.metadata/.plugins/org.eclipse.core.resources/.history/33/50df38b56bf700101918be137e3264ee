@@ -1,0 +1,273 @@
+/* 
+ * "Small Hello World" example. 
+ * 
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example 
+ * designs. It requires a STDOUT  device in your system's hardware. 
+ *
+ * The purpose of this example is to demonstrate the smallest possible Hello 
+#include <stdint.h>
+#include <unistd.h>
+#include "system.h"
+#include "io.h"
+
+/*
+DIGITAL LOCK (Nios II + Qsys PIO on DE board)
+
+Inputs:
+- SW[3:0]  : digit (0..9) chosen by switches
+- KEY0     : enter current digit (moves to next digit)
+- KEY1     : verify code (normal) OR save new code (change mode)
+- KEY2     : reset entry + turn off LEDs + clear wrong counter + cancel lockout
+- KEY3     : enter change-password mode
+
+Outputs:
+- HEX (28-bit PIO): shows the 4 digits being entered (HEX0..HEX3)
+- LEDG0 : ON if correct code OR code saved
+- LEDR0 : ON if wrong code
+(Only one LED ON at a time)
+
+Security:
+- 3 wrong tries sequential => lockout 10 seconds with countdown on HEX2/HEX3
+- During lockout: ignore keys except KEY2 (reset)
+*/
+
+// ---------- CONFIG ----------
+#define CODE_LEN          4
+#define LOCKOUT_SECONDS  10
+
+// Small sleeps to reduce CPU usage and help debounce
+#define POLL_US          5000   // 5ms polling
+#define AFTER_RELEASE_US 20000  // 20ms extra debounce after release
+
+// ---------- 7-Seg LUT (DE boards often active-low) ----------
+static const uint8_t seg7[16] = {
+  0x40, //0
+  0x79, //1
+  0x24, //2
+  0x30, //3
+  0x19, //4
+  0x12, //5
+  0x02, //6
+  0x78, //7
+  0x00, //8
+  0x10, //9
+  0x08, //A
+  0x03, //b
+  0x46, //C
+  0x21, //d
+  0x06, //E
+  0x0E  //F
+};
+
+static inline uint32_t read_key(void) { return IORD(KEY_BASE, 0) & 0xF; }
+static inline uint32_t read_sw(void)  { return IORD(SW_BASE,  0) & 0x3FF; }
+
+static inline void leds_off(void) {
+  IOWR(LEDR_BASE, 0, 0);
+  IOWR(LEDG_BASE, 0, 0);
+}
+static inline void leds_ok(void) {
+  IOWR(LEDR_BASE, 0, 0);
+  IOWR(LEDG_BASE, 0, 1); // LEDG0 only
+}
+static inline void leds_err(void) {
+  IOWR(LEDG_BASE, 0, 0);
+  IOWR(LEDR_BASE, 0, 1); // LEDR0 only
+}
+
+static inline void hex_write(uint32_t v) {
+  IOWR(HEX_BASE, 0, v);
+}
+
+static uint32_t pack4(uint8_t d0, uint8_t d1, uint8_t d2, uint8_t d3) {
+  // HEX0[6:0], HEX1[13:7], HEX2[20:14], HEX3[27:21]
+  uint32_t h0 = seg7[d0 & 0xF];
+  uint32_t h1 = seg7[d1 & 0xF];
+  uint32_t h2 = seg7[d2 & 0xF];
+  uint32_t h3 = seg7[d3 & 0xF];
+  return (h0) | (h1 << 7) | (h2 << 14) | (h3 << 21);
+}
+
+// ---------- Active-low press detection ----------
+// KEY idle = 1, pressed = 0  (you confirmed: idle F, pressed E etc.)
+static inline int is_pressed(uint32_t k, int bit) {
+  return ((k & (1u << bit)) == 0);
+}
+
+// Wait until key is released (fixes bounce / missed edges / "need to press 3 times")
+static void wait_release(int bit) {
+  while (is_pressed(read_key(), bit)) {
+    usleep(POLL_US);
+  }
+  usleep(AFTER_RELEASE_US); // extra debounce after release
+}
+
+// "Press event" using edge + wait_release for reliability
+static int press_event(uint32_t prev, uint32_t now, int bit) {
+  int was_released = ((prev & (1u << bit)) != 0);
+  int now_pressed  = ((now  & (1u << bit)) == 0);
+  return (was_released && now_pressed);
+}
+
+// ---------- App helpers ----------
+static void clear_entry(uint8_t entry[CODE_LEN], uint8_t *idx) {
+  entry[0] = entry[1] = entry[2] = entry[3] = 0;
+  *idx = 0;
+  hex_write(pack4(0,0,0,0));
+}
+
+static void show_entry(uint8_t entry[CODE_LEN]) {
+  hex_write(pack4(entry[0], entry[1], entry[2], entry[3]));
+}
+
+static int entry_is_full(uint8_t idx) {
+  return (idx >= CODE_LEN);
+}
+
+int main(void) {
+  // Default password
+  uint8_t code[CODE_LEN]  = {1,2,3,4};
+
+  // Entry buffer
+  uint8_t entry[CODE_LEN] = {0,0,0,0};
+  uint8_t idx = 0;
+
+  uint8_t wrong_streak = 0;
+  uint8_t locked = 0;
+  uint8_t change_mode = 0;
+
+  leds_off();
+  hex_write(pack4(0,0,0,0));
+
+  uint32_t prev_k = read_key();
+
+  while (1) {
+    uint32_t k = read_key();
+
+    // ---------- KEY2: Reset (works always, even during lockout) ----------
+    if (press_event(prev_k, k, 2)) {
+      wait_release(2);
+
+      locked = 0;
+      change_mode = 0;
+      wrong_streak = 0;
+      clear_entry(entry, &idx);
+      leds_off();
+    }
+
+    // ---------- If locked: show countdown, ignore other keys ----------
+    if (locked) {
+      // locked state handled by countdown loop when it starts
+      // so here we just idle until it becomes unlocked
+      prev_k = k;
+      usleep(POLL_US);
+      continue;
+    }
+
+    // ---------- KEY3: Enter change-password mode ----------
+    if (press_event(prev_k, k, 3)) {
+      wait_release(3);
+
+      change_mode = 1;
+      wrong_streak = 0; // optional: clear wrong tries when entering change mode
+      clear_entry(entry, &idx);
+      leds_off();
+    }
+
+    // ---------- KEY0: Enter digit ----------
+    if (press_event(prev_k, k, 0)) {
+      wait_release(0);
+
+      uint8_t digit = (uint8_t)(read_sw() & 0xF); // SW[3:0]
+      if (digit > 9) digit = 9;
+
+      if (idx < CODE_LEN) {
+        entry[idx] = digit;
+        idx++;
+        show_entry(entry);
+        leds_off();
+      }
+    }
+
+    // ---------- KEY1: Verify OR Save new password ----------
+    if (press_event(prev_k, k, 1)) {
+      wait_release(1);
+
+      // Only act if user entered 4 digits
+      if (!entry_is_full(idx)) {
+        // If not full yet, do nothing (prevents "fake" tries)
+        prev_k = k;
+        usleep(POLL_US);
+        continue;
+      }
+
+      if (change_mode) {
+        // SAVE NEW CODE
+        for (int i = 0; i < CODE_LEN; i++) code[i] = entry[i];
+        change_mode = 0;
+        wrong_streak = 0;
+        leds_ok();
+        clear_entry(entry, &idx); // optional: clear entry after saving
+      } else {
+        // VERIFY
+        int ok = 1;
+        for (int i = 0; i < CODE_LEN; i++) {
+          if (entry[i] != code[i]) { ok = 0; break; }
+        }
+
+        if (ok) {
+          wrong_streak = 0;
+          leds_ok();
+          clear_entry(entry, &idx); // optional: clear after success
+        } else {
+          wrong_streak++;
+          leds_err();
+          clear_entry(entry, &idx); // after wrong try, clear for next attempt
+
+          if (wrong_streak >= 3) {
+            // LOCKOUT 10s
+            locked = 1;
+            leds_off();
+
+            for (int t = LOCKOUT_SECONDS; t >= 0; t--) {
+              // show countdown on HEX2/HEX3: 00:tens:ones
+              int tens = (t / 10) % 10;
+              int ones = t % 10;
+              hex_write(pack4(0, 0, (uint8_t)tens, (uint8_t)ones));
+
+              // during each second, allow KEY2 to cancel lockout
+              for (int slice = 0; slice < 200; slice++) { // 200 * 5ms = 1s
+                uint32_t kk = read_key();
+                if (is_pressed(kk, 2)) { // KEY2 pressed
+                  wait_release(2);
+                  locked = 0;
+                  wrong_streak = 0;
+                  leds_off();
+                  hex_write(pack4(0,0,0,0));
+                  break;
+                }
+                usleep(POLL_US);
+              }
+
+              if (!locked) break;
+            }
+
+            // end lockout normally
+            if (locked) {
+              locked = 0;
+              wrong_streak = 0;
+              leds_off();
+              hex_write(pack4(0,0,0,0));
+            }
+          }
+        }
+      }
+    }
+
+    prev_k = k;
+    usleep(POLL_US);
+  }
+
+  return 0;
+}

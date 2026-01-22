@@ -254,6 +254,12 @@
  <file
    path="DigitalLock/simulation/digitallock_sysid_control_slave_translator.vhd"
    type="VHDL" />
+ <file
+   path="DigitalLock/simulation/digitallock_rst_controller.vhd"
+   type="VHDL" />
+ <file
+   path="DigitalLock/simulation/digitallock_rst_controller_001.vhd"
+   type="VHDL" />
  <topLevel name="DigitalLock" />
  <deviceFamily name="cycloneii" />
  <modelMap controllerPath="DigitalLock.IN_RAM" modelPath="DigitalLock.IN_RAM" />

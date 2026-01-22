@@ -2,7 +2,7 @@ set_global_assignment -entity "DigitalLock" -library "DigitalLock" -name IP_TOOL
 set_global_assignment -entity "DigitalLock" -library "DigitalLock" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "DigitalLock" -library "DigitalLock" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "DigitalLock" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../DigitalLock.sopcinfo"]
-set_instance_assignment -entity "DigitalLock" -library "DigitalLock" -name SLD_INFO "QSYS_NAME DigitalLock HAS_SOPCINFO 1 GENERATION_ID 1768956207"
+set_instance_assignment -entity "DigitalLock" -library "DigitalLock" -name SLD_INFO "QSYS_NAME DigitalLock HAS_SOPCINFO 1 GENERATION_ID 1769038348"
 set_global_assignment -library "DigitalLock" -name MISC_FILE [file join $::quartus(qip_path) "../../DigitalLock.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "DigitalLock" -name MISC_FILE [file join $::quartus(qip_path) "../../DigitalLock.qsys"]
@@ -17,6 +17,8 @@ set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quart
 set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quartus(qip_path) "digitallock_key_s1_translator.vhd"]
 set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quartus(qip_path) "digitallock_timer_s1_translator.vhd"]
 set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quartus(qip_path) "digitallock_sysid_control_slave_translator.vhd"]
+set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quartus(qip_path) "digitallock_rst_controller.vhd"]
+set_global_assignment -library "DigitalLock" -name VHDL_FILE [file join $::quartus(qip_path) "digitallock_rst_controller_001.vhd"]
 set_global_assignment -library "DigitalLock" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DigitalLock_irq_mapper.sv"]
 set_global_assignment -library "DigitalLock" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
 set_global_assignment -library "DigitalLock" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/DigitalLock_rsp_xbar_mux_001.sv"]

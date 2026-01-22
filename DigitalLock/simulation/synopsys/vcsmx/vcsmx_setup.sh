@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 13.0sp1 232 win32 2026.01.21.01:43:25
+# ACDS 13.0sp1 232 win32 2026.01.22.00:32:25
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -151,6 +151,8 @@ if [ $SKIP_COM -eq 0 ]; then
   vhdlan -xlrm "$QSYS_SIMDIR/digitallock_key_s1_translator.vhd"                                                                                                                                                 
   vhdlan -xlrm "$QSYS_SIMDIR/digitallock_timer_s1_translator.vhd"                                                                                                                                               
   vhdlan -xlrm "$QSYS_SIMDIR/digitallock_sysid_control_slave_translator.vhd"                                                                                                                                    
+  vhdlan -xlrm "$QSYS_SIMDIR/digitallock_rst_controller.vhd"                                                                                                                                                    
+  vhdlan -xlrm "$QSYS_SIMDIR/digitallock_rst_controller_001.vhd"                                                                                                                                                
 fi
 
 # ----------------------------------------

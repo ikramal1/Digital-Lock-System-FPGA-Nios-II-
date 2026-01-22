@@ -116,43 +116,11 @@
          type = "String";
       }
    }
-   element SW.s1
-   {
-      datum baseAddress
-      {
-         value = "20512";
-         type = "String";
-      }
-   }
-   element TIMER.s1
-   {
-      datum baseAddress
-      {
-         value = "20480";
-         type = "String";
-      }
-   }
    element HEX.s1
    {
       datum baseAddress
       {
          value = "20576";
-         type = "String";
-      }
-   }
-   element LEDG.s1
-   {
-      datum baseAddress
-      {
-         value = "20560";
-         type = "String";
-      }
-   }
-   element KEY.s1
-   {
-      datum baseAddress
-      {
-         value = "20528";
          type = "String";
       }
    }
@@ -169,6 +137,38 @@
       datum baseAddress
       {
          value = "8192";
+         type = "String";
+      }
+   }
+   element TIMER.s1
+   {
+      datum baseAddress
+      {
+         value = "20480";
+         type = "String";
+      }
+   }
+   element LEDG.s1
+   {
+      datum baseAddress
+      {
+         value = "20560";
+         type = "String";
+      }
+   }
+   element SW.s1
+   {
+      datum baseAddress
+      {
+         value = "20512";
+         type = "String";
+      }
+   }
+   element KEY.s1
+   {
+      datum baseAddress
+      {
+         value = "20528";
          type = "String";
       }
    }
@@ -195,7 +195,7 @@
  <parameter name="projectName" value="DigitalLock.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1768955880169" />
+ <parameter name="timeStamp" value="1769031949585" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="CLK_50.clk_in" type="clock" dir="end" />
@@ -625,6 +625,11 @@
  <connection kind="interrupt" version="13.0" start="CPU.d_irq" end="TIMER.irq">
   <parameter name="irqNumber" value="1" />
  </connection>
+ <connection
+   kind="reset"
+   version="13.0"
+   start="CPU.jtag_debug_module_reset"
+   end="CPU.reset_n" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

@@ -1,12 +1,12 @@
-# system info DigitalLock on 2026.01.21.01:43:24
+# system info DigitalLock on 2026.01.22.00:32:23
 system_info:
 name,value
 DEVICE,EP2C20F484C7
 DEVICE_FAMILY,Cyclone II
-GENERATION_ID,1768956157
+GENERATION_ID,1769038278
 #
 #
-# Files generated for DigitalLock on 2026.01.21.01:43:24
+# Files generated for DigitalLock on 2026.01.22.00:32:23
 files:
 filepath,kind,attributes,module,is_top
 DigitalLock/simulation/DigitalLock.vhd,VHDL,,DigitalLock,true
@@ -19,6 +19,8 @@ DigitalLock/simulation/digitallock_hex_s1_translator.vhd,VHDL,,DigitalLock,false
 DigitalLock/simulation/digitallock_key_s1_translator.vhd,VHDL,,DigitalLock,false
 DigitalLock/simulation/digitallock_timer_s1_translator.vhd,VHDL,,DigitalLock,false
 DigitalLock/simulation/digitallock_sysid_control_slave_translator.vhd,VHDL,,DigitalLock,false
+DigitalLock/simulation/digitallock_rst_controller.vhd,VHDL,,DigitalLock,false
+DigitalLock/simulation/digitallock_rst_controller_001.vhd,VHDL,,DigitalLock,false
 DigitalLock/simulation/submodules/DigitalLock_CPU.sdc,SDC,,DigitalLock_CPU,false
 DigitalLock/simulation/submodules/DigitalLock_CPU.vhd,VHDL,,DigitalLock_CPU,false
 DigitalLock/simulation/submodules/DigitalLock_CPU_jtag_debug_module_sysclk.vhd,VHDL,,DigitalLock_CPU,false
@@ -142,6 +144,9 @@ DigitalLock.id_router_007,DigitalLock_id_router_002
 DigitalLock.id_router_008,DigitalLock_id_router_002
 DigitalLock.id_router_009,DigitalLock_id_router_002
 DigitalLock.rst_controller,altera_reset_controller
+DigitalLock.rst_controller_001,altera_reset_controller
+DigitalLock.rst_controller,altera_reset_controller
+DigitalLock.rst_controller_001,altera_reset_controller
 DigitalLock.cmd_xbar_demux,DigitalLock_cmd_xbar_demux
 DigitalLock.rsp_xbar_demux,DigitalLock_cmd_xbar_demux
 DigitalLock.rsp_xbar_demux_001,DigitalLock_cmd_xbar_demux
