@@ -258,6 +258,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For questions or support, please open an issue on GitHub or contact [your.email@example.com](mailto:ikramallam26@gmail.com)
+For questions or support, please open an issue on GitHub or contact [ikramallam26@gmail.com](mailto:ikramallam26@gmail.com)
 
 ---
