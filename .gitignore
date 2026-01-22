@@ -1,0 +1,39 @@
+# Quartus / Nios II generated folders
+db/
+incremental_db/
+output_files/
+simulation/
+qdb/
+qsys_edit/
+c5_pin_model_dump.txt
+
+# Nios II build outputs
+*.elf
+*.map
+*.obj
+*.o
+*.d
+*.a
+*.axf
+*.lst
+
+# Logs and temp
+*.log
+*.rpt
+*.bak
+*.swp
+*.tmp
+
+# Quartus generated files
+*.qws
+*.smsg
+*.jdi
+*.jic
+*.sof
+*.pof
+*.rbf
+*.cdf
+
+# Windows junk
+Thumbs.db
+.DS_Store
