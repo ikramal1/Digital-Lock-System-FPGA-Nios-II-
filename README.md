@@ -1,7 +1,7 @@
 # Digital-Lock-System-FPGA-Nios-II-
 
 
-A secure 4-digit password system implemented on Intel/Altera DE-series FPGA boards using Nios II soft processor. Features lockout protection, password change capability, and visual feedback through 7-segment displays and LEDs.
+A secure 4-digit password system implemented on Intel/Altera DE1 FPGA boards using Nios II soft processor. Features lockout protection, password change capability, and visual feedback through 7-segment displays and LEDs.
 
 ## 🎯 Features
 
@@ -19,7 +19,7 @@ A secure 4-digit password system implemented on Intel/Altera DE-series FPGA boar
 ## 🛠️ Hardware Requirements
 
 ### FPGA Board
-- Intel/Altera DE-series board (DE0, DE1, DE2, DE10-Lite, etc.)
+- Intel/Altera DE1 board 
 - Nios II processor configured in Quartus Platform Designer (Qsys)
 
 ### Required Hardware Components
@@ -130,27 +130,27 @@ digital-lock-fpga/
 
 ### Prerequisites
 
-- Intel Quartus Prime (tested with version XX.X)
+- Intel Quartus II 13.0sp1
 - Nios II EDS (Embedded Design Suite)
 - USB Blaster cable for programming
-- DE-series FPGA board
+- DE1 FPGA board
 
 ### Build and Deploy
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/yourusername/digital-lock-fpga.git
-   cd digital-lock-fpga
+   git clone https://github.com/ikramal1/Digital-Lock-System-FPGA-Nios-II-.git  
+   cd Digital-Lock-System-FPGA-Nios-II-
    ```
 
 2. **Open in Quartus**:
    ```bash
-   quartus quartus/digital_lock.qpf
+   quartus quartus/digitalLock.qpf
    ```
 
 3. **Generate Hardware**:
    - Open Platform Designer (Tools → Platform Designer)
-   - Open `digital_lock.qsys`
+   - Open `digitalLock.qsys`
    - Generate HDL (Generate → Generate HDL)
    - Compile design (Processing → Start Compilation)
 
@@ -161,10 +161,10 @@ digital-lock-fpga/
 
 5. **Build Software**:
    ```bash
-   cd software/digital_lock_bsp
+   cd software/nios2_digitalLock_bsp
    nios2-bsp hal . ../../quartus
-   cd ../digital_lock
-   nios2-app-generate-makefile --bsp-dir ../digital_lock_bsp
+   cd ../nios2_digitalLock
+   nios2-app-generate-makefile --bsp-dir ../nios2_digitalLock_bsp
    make
    ```
 
@@ -174,13 +174,6 @@ digital-lock-fpga/
    nios2-terminal
    ```
 
-## 🧪 Testing
-
-See [docs/testing_guide.md](docs/testing_guide.md) for comprehensive test procedures covering:
-- Basic functionality tests
-- Security feature verification
-- Edge case handling
-- Stress testing procedures
 
 **Quick Test**:
 1. Enter `1234` → Press KEY1 → LEDG0 should turn ON ✅
@@ -245,9 +238,7 @@ Perfect for:
 - FPGA design projects
 - Computer architecture education
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
@@ -261,16 +252,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **ALLAM Ikram** - *Initial work* - [YourGitHub](https://github.com/ikramal1)
 
-## 🙏 Acknowledgments
 
-- Intel/Altera for Quartus and Nios II tools
-- DE-series FPGA board documentation
-- Embedded systems course instructors and TAs
 
 ## 📧 Contact
 
-For questions or support, please open an issue on GitHub or contact [your.email@example.com](mailto:your.email@example.com)
+For questions or support, please open an issue on GitHub or contact [your.email@example.com](mailto:ikramallam26@gmail.com)
 
 ---
